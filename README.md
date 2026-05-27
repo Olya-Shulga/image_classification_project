@@ -191,11 +191,16 @@ uvicorn main:app --reload
 ```text
 http://127.0.0.1:8000
 ```
-
+```text
+https://image-classification-project-nl0r.onrender.com/docs
+```
 Swagger UI:
 
 ```text
 http://127.0.0.1:8000/docs
+```
+```text
+https://image-classification-project-nl0r.onrender.com/docs
 ```
 ![Backend Screenshot](https://raw.githubusercontent.com/Olya-Shulga/image_classification_project/main/backend.jpg)
 ---
