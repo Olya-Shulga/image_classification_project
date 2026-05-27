@@ -197,7 +197,7 @@ Swagger UI:
 ```text
 http://127.0.0.1:8000/docs
 ```
-
+![Backend Screenshot](https://raw.githubusercontent.com/Olya-Shulga/image_classification_project/main/backend.jpg)
 ---
 
 # Запуск frontend
@@ -217,6 +217,8 @@ streamlit run app.py
 ```
 
 После запуска интерфейс откроется в браузере автоматически.
+
+![Frontend Screenshot](https://raw.githubusercontent.com/Olya-Shulga/image_classification_project/main/frontend.jpg)
 
 ---
 
