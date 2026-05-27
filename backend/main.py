@@ -7,12 +7,12 @@ import json
 
 app = FastAPI()
 
-model = load_model("../models/best_model_final.keras")
+model = load_model("models/best_model_final.keras")
 
-with open("../models/class_names.json", "r") as f:
+with open("models/class_names.json", "r", encoding="utf-8") as f:
     class_names = json.load(f)["classes"]
 
-with open("../models/model_meta.json", "r") as f:
+with open("models/model_meta.json", "r", encoding="utf-8") as f:
     IMG_SIZE = json.load(f)["img_size"]
 
 
