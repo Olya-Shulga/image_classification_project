@@ -38,11 +38,18 @@ async def predict(file: UploadFile = File(...)):
 
     prediction = model.predict(processed)
 
-    predicted_class = class_names[np.argmax(prediction)]
+    probs = prediction[0]
 
-    confidence = float(np.max(prediction))
+    predicted_class = class_names[np.argmax(probs)]
+    confidence = float(np.max(probs))
+
+    probabilities = {
+        class_names[i]: float(probs[i])
+        for i in range(len(class_names))
+    }
 
     return {
         "class": predicted_class,
-        "confidence": confidence
+        "confidence": confidence,
+        "probabilities": probabilities
     }
