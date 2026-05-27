@@ -242,8 +242,11 @@ results/
 
 Содержимое:
 - confusion matrices;
+![confusion matrices Screenshot](https://github.com/Olya-Shulga/image_classification_project/blob/main/results/confusion_matrices.png)
 - графики метрик;
+![metrics_comparison Screenshot](https://github.com/Olya-Shulga/image_classification_project/blob/main/results/metrics_comparison.png)
 - время инференса;
+![inference_time Screenshot](https://github.com/Olya-Shulga/image_classification_project/blob/main/results/inference_time.png)
 - CSV-таблица сравнения моделей.
 
 ---
