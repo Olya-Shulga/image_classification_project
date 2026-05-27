@@ -40,13 +40,16 @@ async def predict(file: UploadFile = File(...)):
 
     probs = prediction[0]
 
-    predicted_class = class_names[np.argmax(probs)]
-    confidence = float(np.max(probs))
+    n = min(len(class_names), len(probs))
 
     probabilities = {
         class_names[i]: float(probs[i])
-        for i in range(len(class_names))
+        for i in range(n)
     }
+
+    predicted_idx = int(np.argmax(probs[:n]))
+    predicted_class = class_names[predicted_idx]
+    confidence = float(probs[predicted_idx])
 
     return {
         "class": predicted_class,
