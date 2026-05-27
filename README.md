@@ -223,6 +223,10 @@ streamlit run app.py
 
 После запуска интерфейс откроется в браузере автоматически.
 
+```text
+https://image-classification-frontend-drhx.onrender.com/
+```
+
 ![Frontend Screenshot](https://raw.githubusercontent.com/Olya-Shulga/image_classification_project/main/frontend.jpg)
 
 ---
