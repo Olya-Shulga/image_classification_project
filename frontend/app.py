@@ -23,7 +23,7 @@ if uploaded_file is not None:
     col1, col2 = st.columns([1, 1], gap="large")
 
     with col1:
-        st.image(image, caption="Загруженное изображение", use_container_width=True)
+        st.image(image, caption="Загруженное изображение", use_column_width=True)
 
     with col2:
         st.subheader("Прогноз нейросети:")
